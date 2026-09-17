@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seu Nome — Portfólio de Hardware</title>
-<meta name="description" content="Portfólio de projetos de hardware desenvolvidos por Seu Nome.">
+<title>Pedro Ulhoa — Portfólio de Hardware</title>
+<meta name="description" content="Portfolio - Pedro Ulhoa">
 
 <!--
   ============================================================
@@ -27,11 +27,11 @@
 
 <style>
   :root {
-    --bg: #12171B;
+    --bg: #e4e4e4;
     --bg-raised: #171D22;
-    --ink: #EDEFF1;
-    --ink-dim: #9CA6AC;
-    --copper: #C67C4E;
+    --ink: #05213e;
+    --ink-dim: #05213e;
+    --copper: #e96c1f;
     --teal: #4F8C82;
     --line: #2A3238;
     --frame: #333D44;
@@ -156,16 +156,16 @@
 
   .project-image {
     position: relative;
-    border: 1px solid var(--frame);
-    background: var(--bg-raised);
-    aspect-ratio: 4 / 3;
+    /* border: 1px solid var(--frame); */
+    /* background: var(--bg-raised); */
+    aspect-ratio: 6 / 5.5;
     overflow: hidden;
   }
 
   .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
   }
 
@@ -268,13 +268,10 @@
 <header class="hero">
   <div class="wrap">
     <div class="hero-text">
-      <p class="hero-label">Engenharia de hardware &amp; sistemas embarcados</p>
-      <h1>Seu Nome</h1>
+      <p class="hero-label">Portfolio - Hardware</p>
+      <h1>Pedro Ulhoa</h1>
       <p>
-        Sou desenvolvedor de hardware focado em eletrônica embarcada, do
-        esquemático ao protótipo funcional. Este espaço reúne projetos que
-        desenhei, montei e testei — de placas de controle a instrumentos de
-        bancada. Substitua este parágrafo por uma descrição sua.
+        I'm a hardware developer focused on embedded electronics for academic, medical, and other applications, from schematic to working prototype. This space brings together projects I've designed, built, and validated.
       </p>
     </div>
 
@@ -282,107 +279,130 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
         <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      Baixar currículo (PDF)
+      Download CV (PDF)
     </a>
   </div>
 </header>
 
 <main class="wrap">
-  <p class="section-heading">Hardwares desenvolvidos</p>
+  <p class="section-heading">Hardwares examples</p>
 
   <!-- ============ PROJETO 1 — copie este bloco para adicionar mais ============ -->
   <article class="project">
     <div class="project-image">
-      <img src="assets/hardwares/driver-motor-bldc.svg" alt="Foto do driver de motor BLDC">
+      <img src="assets/hardwares/cboard.png" alt="Cboard">
     </div>
     <div class="project-info">
-      <p class="project-meta">2024 · Eletrônica de potência</p>
-      <h2>Driver de motor BLDC</h2>
+      <p class="project-meta">Title: CBoard</p>
+      <h2>PCB for managing connections and external sensors in a Lower Limb Prosthesis</h2>
       <p>
-        Placa de controle para motores brushless com sensoriamento de
-        corrente e comutação trapezoidal. Descreva aqui o problema que o
-        projeto resolve, as decisões de projeto e os desafios que você
-        enfrentou ao construí-lo.
+        This PCB was embedded in a robotic device for rehabilitation: a robotic lower-limb prosthesis. 
+        The PCB includes an STM32 microcontroller, peripherals for CAN communication with an EPOS motor driver (Maxon Motors), 
+        an amplification circuit for sensing battery level and prosthesis temperature, and I2C and UART buses for 
+        communication with external sensors (sEMG, IMUs, force sensors, etc.). In addition, 
+        a buck regulator was used to power all the circuits, and it was designed to meet EMI emission limits for 
+        electromagnetic compatibility (EMC).
       </p>
-      <ul class="specs">
-        <li><strong>MCU</strong>STM32F103</li>
-        <li><strong>Tensão</strong>12–24 V</li>
-        <li><strong>Corrente máx.</strong>15 A</li>
-        <li><strong>Interface</strong>UART / PWM</li>
-      </ul>
+
+      <p>Details: 4-layer PCB manufactred and assembled in JLCPCB.</p>
+
+      <p>Designed with KiCAD</p>
+      
     </div>
   </article>
 
   <!-- ============ PROJETO 2 ============ -->
   <article class="project">
     <div class="project-image">
-      <img src="assets/hardwares/estacao-solda.svg" alt="Foto da estação de solda inteligente">
+      <img src="assets/hardwares/mboard.png" alt="mboard">
     </div>
     <div class="project-info">
-      <p class="project-meta">2023 · Instrumentação de bancada</p>
-      <h2>Estação de solda inteligente</h2>
+      <p class="project-meta">Title: MBoard</p>
+      <h2>PCB for capturing 8 strain gauge-based force sensors</h2>
       <p>
-        Estação de solda com controle PID de temperatura e display para
-        ajuste de perfil térmico. Substitua por uma descrição real do
-        projeto, materiais usados e resultado alcançado.
+        This circuit was developed to capture signals from force sensors based on strain gauges arranged in a Wheatstone bridge.
+         Each channel includes a 2nd-order analog low-pass filter for anti-aliasing, connected to an instrumentation amplifier that 
+         amplifies the signal and effectively rejects common-mode noise. In addition to the instrumentation amplifiers, 
+         16-bit ADCs were used to digitize the signal directly on this PCB. Together with the CBoard, this PCB was installed in a 
+         robotic lower-limb prosthesis.
       </p>
-      <ul class="specs">
-        <li><strong>Controle</strong>PID digital</li>
-        <li><strong>Faixa</strong>150–450 °C</li>
-        <li><strong>Sensor</strong>Termopar tipo K</li>
-        <li><strong>Display</strong>OLED 128x64</li>
-      </ul>
+
+      <p>Details: 4-layer PCB manufactred and assembled in JLCPCB.</p>
+
+      <p>Designed with KiCAD</p>
+      
     </div>
   </article>
 
   <!-- ============ PROJETO 3 ============ -->
   <article class="project">
     <div class="project-image">
-      <img src="assets/hardwares/modulo-iot.svg" alt="Foto do módulo IoT">
+      <img src="assets/hardwares/myo.png" alt="myosym">
     </div>
     <div class="project-info">
-      <p class="project-meta">2023 · IoT</p>
-      <h2>Módulo IoT para monitoramento</h2>
+      <p class="project-meta">Title: MyoSym</p>
+      <h2>sEMG Module with 3 bipolar channels</h2>
       <p>
-        Placa compacta com Wi-Fi para leitura de sensores ambientais e envio
-        de dados para um servidor local. Conte aqui o objetivo do projeto e
-        como ele é usado na prática.
+        sEMG acquisition module containing 3 bipolar channels to be connected. Each channel is routed to a 24-bit ADC for high-resultion without the need to apply a hige gain stage.
+        Anti-aliasing filters were used in the analog front-end. A STM32 chip was used to process the signals with digital filters, and send them to the USB Bus or via SPI to an external 
+        micro SD card. A fourth channel in the PCB was used as Right-Leg Drive to reduce noise in each sEMG channel.
       </p>
-      <ul class="specs">
-        <li><strong>MCU</strong>ESP32-WROOM</li>
-        <li><strong>Consumo</strong>&lt; 80 mA</li>
-        <li><strong>Sensores</strong>Temp. / umidade</li>
-        <li><strong>Conectividade</strong>Wi-Fi 2.4 GHz</li>
-      </ul>
+
+      <p>Details: 4-layer PCB manufactred and assembled in JLCPCB.</p>
+
+      <p>Designed with KiCAD</p>
+      
     </div>
   </article>
 
   <!-- ============ PROJETO 4 ============ -->
   <article class="project">
     <div class="project-image">
-      <img src="assets/hardwares/fonte-bancada.svg" alt="Foto da fonte de bancada programável">
+      <img src="assets/hardwares/emgboard.png" alt="EMG board">
     </div>
     <div class="project-info">
-      <p class="project-meta">2022 · Instrumentação de bancada</p>
-      <h2>Fonte de bancada programável</h2>
+      <p class="project-meta">Title: EMGBoard</p>
+      <h2>sEMG system: an evolution from MyoSym</h2>
       <p>
-        Fonte linear com tensão e corrente ajustáveis por software e proteção
-        contra curto-circuito. Substitua por detalhes reais do seu projeto e
-        o que você aprendeu construindo-o.
+        This board is a update from the previous version of the MyoSym. This time, a more robust analog front-end was created using intrumentation amplifiers before the 24-bit ADC. 
+        Also, a more compact STM32 was used, together with a Galvanic Isolator between the MCU and the ADC to guarantee patient/user isolation.
+
+        This board was used to collect EMG data in two main projects in a Research Lab: Lower limb exoskeleton for people with Cerebral Palsy and a Lower-limb prosthesis.
       </p>
-      <ul class="specs">
-        <li><strong>Saída</strong>0–30 V / 0–5 A</li>
-        <li><strong>Regulação</strong>Linear</li>
-        <li><strong>Proteção</strong>OCP / OVP</li>
-        <li><strong>Controle</strong>Digital + encoder</li>
-      </ul>
+
+      <p>Details: 4-layer PCB manufactred and assembled in JLCPCB.</p>
+
+      <p>Designed with KiCAD</p>
+      
+    </div>
+  </article>
+
+  <!-- ============ PROJETO 4 ============ -->
+  <article class="project">
+    <div class="project-image">
+      <img src="assets/hardwares/motorshield.png" alt="Foto da fonte de bancada programável">
+    </div>
+    <div class="project-info">
+      <p class="project-meta">Title: Motor Shield</p>
+      <h2>Motor Driver PCB</h2>
+      <p>
+        This PCB was developed in order to control a Motor Driver (ESCON2 from Maxon Motors). It contains connections for the Encoder, Hall Sensors and Power (24V - 48V).
+        Also, it contains a USB connection so a Master controller can command the torque, velocity and position of the actuator (motor + transmission). A force sensor acquisiton circuit is also implemented in the PCB.
+
+        This project is being used to control the 6 actuators in a lower limb exoskeleton (hip, knee, and ankle, from each leg).
+      </p>
+
+      <p>Details: 4-layer PCB manufactred and assembled in JLCPCB.</p>
+
+      <p>Designed with KiCAD</p>
+     
     </div>
   </article>
 
 </main>
 
 <footer class="wrap">
-  <p>&copy; 2026 Seu Nome. Construído para GitHub Pages.</p>
+  <p>&copy; 2026 Pedro Ulhoa. Hardware Portfolio</p>
 </footer>
 
 </body>
