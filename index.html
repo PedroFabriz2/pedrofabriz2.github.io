@@ -1,380 +1,389 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seu Nome — Portfólio de Hardware</title>
+<meta name="description" content="Portfólio de projetos de hardware desenvolvidos por Seu Nome.">
+
 <!--
-	Aesthetic by freehtml5.co
-	Twitter: http://twitter.com/fh5co
-	URL: http://freehtml5.co
+  ============================================================
+  COMO PERSONALIZAR ESTA PÁGINA
+  ============================================================
+  1. Troque "Seu Nome" pelo seu nome, em toda a página.
+  2. Reescreva o texto do <header> (bio) com a sua descrição.
+  3. Coloque o PDF do seu currículo na pasta assets/ com o nome
+     "curriculo.pdf" (ou ajuste o href do botão de download).
+  4. Para cada hardware, troque a imagem em assets/hardwares/
+     por uma foto real do seu projeto e edite título/descrição.
+  5. Para adicionar mais projetos, copie um bloco <article
+     class="project"> inteiro e cole abaixo do último.
+  ============================================================
 -->
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Beryllium &mdash; Free Website Template, Free HTML5 Template by FreeHTML5.co</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FreeHTML5.co" />
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Themify Icons-->
-	<link rel="stylesheet" href="css/themify-icons.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+  :root {
+    --bg: #12171B;
+    --bg-raised: #171D22;
+    --ink: #EDEFF1;
+    --ink-dim: #9CA6AC;
+    --copper: #C67C4E;
+    --teal: #4F8C82;
+    --line: #2A3238;
+    --frame: #333D44;
+  }
 
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+  * { box-sizing: border-box; }
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+  html { scroll-behavior: smooth; }
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-image:
+      radial-gradient(var(--frame) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-position: -14px -14px;
+  }
 
-	</head>
-	<body>
-		
-	<div class="gtco-loader"></div>
-	
-	<div id="page">
+  a { color: var(--copper); }
 
-		<nav class="gtco-nav" role="navigation">
-			<div class="gtco-container">
-				
-				<div class="row">
-					<div class="col-sm-2 col-xs-12">
-						<div id="gtco-logo"><a href="index.html">Pedro Henrique Fabriz Ulhoa</div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="about.html">About Me</a></li>
-							<li class="has-dropdown">
-								<a href="services.html">Projects</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
-								</ul>
-							</li>
-							<li class="has-dropdown">
-								<a href="#">Awards</a>
-								<ul class="dropdown">
-									<li><a href="#">HTML5</a></li>
-									<li><a href="#">CSS3</a></li>
-									<li><a href="#">Sass</a></li>
-									<li><a href="#">jQuery</a></li>
-								</ul>
-							</li>
-							<li><a href="portfolio.html">Portfolio</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</nav>
+  .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
 
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="owl-carousel owl-carousel-fullwidth">
-						<div class="item">
-							<a href="#">
-								<img src="images/slider_1.jpg" alt="Free Website Template by FreeHTML5.co">
-								<div class="slider-copy">
-									<h2>Architecture #1</h2>
-								</div>
-							</a>
-						</div>
-						<div class="item">
-							<a href="#">
-								<img src="images/slider_2.jpg" alt="Free Website Template by FreeHTML5.co">
-								<div class="slider-copy">
-									<h2>Architecture #1</h2>
-								</div>
-							</a>
-						</div>
-						<div class="item">
-							<a href="#">
-								<img src="images/slider_3.jpg" alt="Free Website Template by FreeHTML5.co">
-								<div class="slider-copy">
-									<h2>Architecture #1</h2>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+  /* ---------- HEADER ---------- */
 
-		<div class="gtco-section">
-			<div class="gtco-container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
-						<h2>Work</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.</p>
-					</div>
-				</div>
-				<div class="row">
+  header.hero {
+    padding: 72px 0 56px;
+    border-bottom: 1px solid var(--line);
+  }
 
-					<div class="col-md-12">
-						<div class="owl-carousel owl-carousel-carousel">
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_1.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">New York Arena</h2></a>
-									<p class="role">New York</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_2.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">Eagle Park</h2></a>
-									<p class="role">London</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_3.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">Nationals Park</h2></a>
-									<p class="role">Paris, France</p>
-								</div>
-							</div>
+  header.hero .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
 
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_1.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">New York Arena</h2></a>
-									<p class="role">New York</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_2.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">Eagle Park</h2></a>
-									<p class="role">London</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_3.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">Nationals Park</h2></a>
-									<p class="role">Paris, France</p>
-								</div>
-							</div>
+  .hero-text {
+    max-width: 620px;
+  }
 
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_1.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">New York Arena</h2></a>
-									<p class="role">New York</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_2.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">Eagle Park</h2></a>
-									<p class="role">London</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_3.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">Nationals Park</h2></a>
-									<p class="role">Paris, France</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-		<!-- END Work -->
+  .hero-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--teal);
+    letter-spacing: 0.02em;
+    margin: 0 0 14px;
+  }
 
-		<div class="gtco-section">
-			<div class="gtco-container">
-				<div class="row">
-					<div class="col-md-6 gtco-news">
-						<h2>News</h2>	
-						<ul>
-							<li>
-								<a href="#">
-									<span class="post-date">September 10, 2016</span>
-									<h3>Manila Bridge Re-construction</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</p>
-								</a>
-							</li>
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    line-height: 1.1;
+    margin: 0 0 18px;
+    color: var(--ink);
+  }
 
-							<li>
-								<a href="#">
-									<span class="post-date">September 10, 2016</span>
-									<h3>Manila Bridge Re-construction</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</p>
-								</a>
-							</li>
+  .hero-text p {
+    color: var(--ink-dim);
+    font-size: 1.05rem;
+    max-width: 58ch;
+    margin: 0;
+  }
 
-							<li>
-								<a href="#">
-									<span class="post-date">September 10, 2016</span>
-									<h3>Manila Bridge Re-construction</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</p>
-								</a>
-							</li>
-						</ul>
-						<p><a href="#" class="btn btn-sm btn-special">More News</a></p>
-					</div>
-					<!-- END News -->
-					<div class="col-md-5 col-md-push-1 gtco-testimonials">
-						<h2>Testimonials</h2>
-						<blockquote>
-							<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.&ldquo;</p>
-							<p class="author"><cite>&mdash; John Doe Dueller</cite></p>
-						</blockquote>
-						<blockquote>
-							<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.&ldquo;</p>
-							<p class="author"><cite>&mdash; John Doe Dueller</cite></p>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- END  -->
+  .cv-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    padding: 14px 22px;
+    background: transparent;
+    border: 1px solid var(--copper);
+    color: var(--copper);
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
 
-		<div class="gtco-section gto-features">
-			<div class="gtco-container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-zip icon"></i>
-							<div class="copy">
-								<h3>Architect</h3>
-								<p>Lorem ipsum dolor sit ameteista, consectetur adipiscing is not elitistaris.</p>
-								<p><a href="#" class="gtco-more">Learn more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-hummer icon"></i>
-							<div class="copy">
-								<h3>Planning</h3>
-								<p>Lorem ipsum dolor sit ameteista, consectetur adipiscing is not elitistaris.</p>
-								<p><a href="#" class="gtco-more">Learn more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-plug icon"></i>
-							<div class="copy">
-								<h3>Parks &amp; Events</h3>
-								<p>Lorem ipsum dolor sit ameteista, consectetur adipiscing is not elitistaris.</p>
-								<p><a href="#" class="gtco-more">Learn more</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+  .cv-button:hover {
+    background: var(--copper);
+    color: var(--bg);
+  }
 
-		<footer id="gtco-footer" class="gtco-section" role="contentinfo">
-			<div class="gtco-container">
-				<div class="row row-pb-md">
-					<div class="col-md-4 gtco-widget gtco-footer-paragraph">
-						<h3>Beryllium</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod.</p>
-					</div>
-					<div class="col-md-4">
-						<div class="row">
-							<div class="col-md-6 gtco-footer-link">
-								<h3>Links</h3>
-								<ul class="gtco-list-link">
-									<li><a href="#">Home</a></li>
-									<li><a href="#">Features</a></li>
-									<li><a href="#">Products</a></li>
-									<li><a href="#">Testimonial</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-							</div>
-							<div class="col-md-6 gtco-footer-link">
-								<h3>Work</h3>
-								<ul class="gtco-list-link">
-									<li><a href="#">New York Arena</a></li>
-									<li><a href="#">Eagle Park</a></li>
-									<li><a href="#">Nationals Park</a></li>
-									<li><a href="#">Manila Park</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gtco-footer-subscribe">
-						<form class="form-inline">
-						  <div class="form-group">
-						    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-						    <input type="email" class="form-control" id="" placeholder="Email">
-						  </div>
-						  <button type="submit" class="btn btn-primary">Send</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="gtco-copyright">
-				<div class="gtco-container">
-					<div class="row">
-						<div class="col-md-6 text-left">
-							<p><small>&copy; 2016 Free HTML5. All Rights Reserved. </small></p>
-						</div>
-						<div class="col-md-6 text-right">
-							<p><small>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://pixeden.com/" target="_blank">Pixeden</a> &amp; <a href="http://unsplash.com" target="_blank">Unsplash</a></small> </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- END footer -->
+  .cv-button svg { width: 16px; height: 16px; }
 
-	</div>
+  /* ---------- PROJECTS ---------- */
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+  main {
+    padding: 64px 0 96px;
+  }
 
-	<!-- Main -->
-	<script src="js/main.js"></script>
+  .section-heading {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--ink-dim);
+    letter-spacing: 0.02em;
+    margin: 0 0 40px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+  }
 
-	</body>
+  .project {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 40px;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .project:last-child { border-bottom: none; }
+
+  .project-image {
+    position: relative;
+    border: 1px solid var(--frame);
+    background: var(--bg-raised);
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* cantos de registro, estilo marcação de placa de circuito */
+  .project-image::before,
+  .project-image::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-color: var(--copper);
+    opacity: 0.7;
+  }
+  .project-image::before {
+    top: 6px; left: 6px;
+    border-top: 1px solid var(--copper);
+    border-left: 1px solid var(--copper);
+  }
+  .project-image::after {
+    bottom: 6px; right: 6px;
+    border-bottom: 1px solid var(--copper);
+    border-right: 1px solid var(--copper);
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    color: var(--teal);
+    margin: 0 0 10px;
+  }
+
+  .project-info h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0 0 12px;
+    color: var(--ink);
+  }
+
+  .project-info p {
+    color: var(--ink-dim);
+    margin: 0 0 16px;
+    max-width: 62ch;
+  }
+
+  .specs {
+    list-style: none;
+    margin: 0;
+    padding: 14px 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px 20px;
+    border-top: 1px solid var(--line);
+  }
+
+  .specs li {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    color: var(--ink-dim);
+  }
+
+  .specs li strong {
+    display: block;
+    color: var(--ink);
+    font-size: 13.5px;
+    margin-bottom: 2px;
+  }
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    padding: 32px 0 56px;
+    color: var(--ink-dim);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (max-width: 720px) {
+    .project {
+      grid-template-columns: 1fr;
+    }
+    header.hero {
+      padding: 56px 0 40px;
+    }
+    header.hero .wrap {
+      align-items: flex-start;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="hero-label">Engenharia de hardware &amp; sistemas embarcados</p>
+      <h1>Seu Nome</h1>
+      <p>
+        Sou desenvolvedor de hardware focado em eletrônica embarcada, do
+        esquemático ao protótipo funcional. Este espaço reúne projetos que
+        desenhei, montei e testei — de placas de controle a instrumentos de
+        bancada. Substitua este parágrafo por uma descrição sua.
+      </p>
+    </div>
+
+    <a class="cv-button" href="assets/curriculo.pdf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Baixar currículo (PDF)
+    </a>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="section-heading">Hardwares desenvolvidos</p>
+
+  <!-- ============ PROJETO 1 — copie este bloco para adicionar mais ============ -->
+  <article class="project">
+    <div class="project-image">
+      <img src="assets/hardwares/driver-motor-bldc.svg" alt="Foto do driver de motor BLDC">
+    </div>
+    <div class="project-info">
+      <p class="project-meta">2024 · Eletrônica de potência</p>
+      <h2>Driver de motor BLDC</h2>
+      <p>
+        Placa de controle para motores brushless com sensoriamento de
+        corrente e comutação trapezoidal. Descreva aqui o problema que o
+        projeto resolve, as decisões de projeto e os desafios que você
+        enfrentou ao construí-lo.
+      </p>
+      <ul class="specs">
+        <li><strong>MCU</strong>STM32F103</li>
+        <li><strong>Tensão</strong>12–24 V</li>
+        <li><strong>Corrente máx.</strong>15 A</li>
+        <li><strong>Interface</strong>UART / PWM</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- ============ PROJETO 2 ============ -->
+  <article class="project">
+    <div class="project-image">
+      <img src="assets/hardwares/estacao-solda.svg" alt="Foto da estação de solda inteligente">
+    </div>
+    <div class="project-info">
+      <p class="project-meta">2023 · Instrumentação de bancada</p>
+      <h2>Estação de solda inteligente</h2>
+      <p>
+        Estação de solda com controle PID de temperatura e display para
+        ajuste de perfil térmico. Substitua por uma descrição real do
+        projeto, materiais usados e resultado alcançado.
+      </p>
+      <ul class="specs">
+        <li><strong>Controle</strong>PID digital</li>
+        <li><strong>Faixa</strong>150–450 °C</li>
+        <li><strong>Sensor</strong>Termopar tipo K</li>
+        <li><strong>Display</strong>OLED 128x64</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- ============ PROJETO 3 ============ -->
+  <article class="project">
+    <div class="project-image">
+      <img src="assets/hardwares/modulo-iot.svg" alt="Foto do módulo IoT">
+    </div>
+    <div class="project-info">
+      <p class="project-meta">2023 · IoT</p>
+      <h2>Módulo IoT para monitoramento</h2>
+      <p>
+        Placa compacta com Wi-Fi para leitura de sensores ambientais e envio
+        de dados para um servidor local. Conte aqui o objetivo do projeto e
+        como ele é usado na prática.
+      </p>
+      <ul class="specs">
+        <li><strong>MCU</strong>ESP32-WROOM</li>
+        <li><strong>Consumo</strong>&lt; 80 mA</li>
+        <li><strong>Sensores</strong>Temp. / umidade</li>
+        <li><strong>Conectividade</strong>Wi-Fi 2.4 GHz</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- ============ PROJETO 4 ============ -->
+  <article class="project">
+    <div class="project-image">
+      <img src="assets/hardwares/fonte-bancada.svg" alt="Foto da fonte de bancada programável">
+    </div>
+    <div class="project-info">
+      <p class="project-meta">2022 · Instrumentação de bancada</p>
+      <h2>Fonte de bancada programável</h2>
+      <p>
+        Fonte linear com tensão e corrente ajustáveis por software e proteção
+        contra curto-circuito. Substitua por detalhes reais do seu projeto e
+        o que você aprendeu construindo-o.
+      </p>
+      <ul class="specs">
+        <li><strong>Saída</strong>0–30 V / 0–5 A</li>
+        <li><strong>Regulação</strong>Linear</li>
+        <li><strong>Proteção</strong>OCP / OVP</li>
+        <li><strong>Controle</strong>Digital + encoder</li>
+      </ul>
+    </div>
+  </article>
+
+</main>
+
+<footer class="wrap">
+  <p>&copy; 2026 Seu Nome. Construído para GitHub Pages.</p>
+</footer>
+
+</body>
 </html>
-
